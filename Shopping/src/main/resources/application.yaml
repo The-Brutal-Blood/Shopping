@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Shopping
+  datasource:
+    # Local development database
+    url: jdbc:mysql://localhost:3306/shopping?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      # Use 'update' for development to auto-create schema
+      ddl-auto: update
+    open-in-view: false
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
